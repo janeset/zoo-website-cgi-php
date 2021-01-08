@@ -1,0 +1,73 @@
+/*
+* FILE : animalServer.css
+* PROJECT : PROG2001 - Assignment #3
+* PROGRAMMER : Janeth Santos and Hongsik Eom
+* FIRST VERSION : Oct 23, 2020
+* DESCRIPTION :
+* This file contains all the styles used in the both cgi and php servers.
+*/
+
+/* Body style*/
+body
+{
+  background-color: black;
+}
+
+/* h1 style*/
+h1
+{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid orange;
+  line-height: 0.1em;
+  margin: 3% 0 20px;
+}
+
+/* h1 span style*/
+h1 span
+{
+  background:black;
+  color: white;
+  padding:0 10px;
+  font-family:century gothic;
+  font-weight: normal;
+}
+
+/* h2 style*/
+h2
+{
+  color: white;
+  font-family:century gothic;
+  font-weight: normal;
+  text-align:center;
+  margin-top: 5%;
+}
+
+/* h2 span style*/
+h2 span
+{
+  color: orange;
+}
+
+/* img style*/
+img
+{
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+/* animalDescription Class style*/
+.animalDescription
+{
+  color: white;
+  font-family:century gothic;
+  font-weight: normal;
+  text-align:left;
+  margin-left: 5 %;
+}
+
+/* contents Class style*/
+.contents
+{
+  padding-top: 20px;
+}

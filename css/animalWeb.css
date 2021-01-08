@@ -1,0 +1,118 @@
+/*
+* FILE : animalWeb.css
+* PROJECT : PROG2001 - Assignment #3
+* PROGRAMMER : Janeth Santos and Hongsik Eom
+* FIRST VERSION : Oct 23, 2020
+* DESCRIPTION :
+* This file contains all the styles used in the both cgi and php webpages.
+*/
+
+
+body
+{
+    background: url('../theZoo/homepageLeopard.jpg') no-repeat center center fixed;    /* The image used */
+    background-color: #cccccc;       /* Used if the image is unavailable */
+    background-size: cover;          /* Resize the background image to cover the entire container */
+    background-origin: boder-box;
+    width: auto;
+    height: auto;
+    color: white;
+}
+
+/* h1 tag style*/
+h1
+{
+  color: white;
+  font-size: 60px;
+  font-weight: normal;
+  padding: 200px 200px 0;
+  text-align: left;
+  font-family:"century gothic";
+}
+
+/* form tag style*/
+form
+{
+  text-align: left;
+  padding-left: 100px;
+}
+
+/* Label span style*/
+label span
+{
+  color: orange;
+}
+
+/* User name box style */
+.inputBox
+{
+  height:32px;
+  width:200px;
+  font-size:15pt;
+  font-family:calibri;
+  border:1px;
+  border-radius: 15px;
+  text-align:center;
+  margin-bottom: 10px;
+}
+
+/* Button style */
+.button
+{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 100;
+  background-color: #000000;
+  border: solid #FFFFFF 2px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  margin:3% 50% 25px 25%;
+  cursor: pointer;
+  text-align: center;
+  font-family:"century gothic";
+}
+
+/* Button hover style */
+.button:hover
+{
+  font-family:"century gothic";
+  background: #000000;
+  border: solid #99C624 2px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* Error message style */
+.errorMessage
+{
+  font-size:12pt;
+  font-family:calibri;
+  font-weight: bold;
+  color:#E4F90E;
+  margin:0% 5% 5% 0%;
+  text-align:center;
+}
+
+/* Label style */
+.infoLabel
+{
+   color: white;
+   font-weight: bold;
+   font-size:15pt;
+   font-family:century gothic;
+   font-weight: normal;
+   text-align:left;
+   width: 120;
+}
+
+
+.nameSection
+{  
+  margin:0% 5% 5px 2%;
+}

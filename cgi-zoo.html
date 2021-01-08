@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--/*
+* FILE : cgi-zoo.html
+* PROJECT : PROG2001 - Assignment #3
+* PROGRAMMER : Janeth Santos and Hongsik Eom
+* FIRST VERSION : Oct 23, 2020
+* DESCRIPTION :
+* HTML file contains a Zoo form that requires input for a name and selection of
+* an animal, which will be validated before submittion by using the GET method
+* to a CGI version of the webserver.
+*/-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HJ Zoo</title>
+  <link rel="stylesheet" href="./css/animalWeb.css">
+</head>
+
+<body>
+  <!--header-->
+  <h1 >HJ <span style="color: orange;">Zoo</span></label></h1>
+  <form name="ZooForm" action="./animals.exe" onSubmit= "return ValidateAnimal();" method="GET" autocomplete="off" >
+    
+     <!-- Name -->
+    <div id="nameSection" class="nameSection" style="display: inline-block;">
+      <label class="infoLabel">Enter <span style="margin-right: 10px; "> Name</span></label>
+      <input type="text" class="inputBox" id="fullNameBox" name="fullName" placeholder="Sean clark"><br>
+      <label id="fullNameError" class="errorMessage"></label><br>
+       <!-- name button -->
+      <input class="button" type="button" value="Submit Name" onclick="ValidateFullName();"><br>
+      
+    </div>
+
+     <!-- Animal Selection -->
+    <div id="animalSection" class="animalSection" style="display: none;">
+      <p class="userName infoLabel"></p>
+      <label class="infoLabel">Select <span>Animal</span></label>
+      <select class="inputBox" id="animalBox" name="selectAnimal">
+        <option value="blank"  selected=""></option>
+        <option value="Cat"    >  &nbsp;&nbsp;&nbsp;Cat     </option>
+        <option value="Dog"    >  &nbsp;&nbsp;&nbsp;Dog     </option>
+        <option value="Dolphin">  &nbsp;&nbsp;&nbsp;Dolphin </option>
+        <option value="Eagle"  >  &nbsp;&nbsp;&nbsp;Eagle   </option>
+        <option value="Lion"   >  &nbsp;&nbsp;&nbsp;Lion    </option>
+        <option value="Penguin">  &nbsp;&nbsp;&nbsp;Penguin </option>
+      </select><br>
+      <label id="animalError" class="errorMessage"></label>
+       <!-- animal button -->
+      <input type="submit" class="button" value="Submit Animal"><br>      
+    </div>
+  </form>
+  <script src="./js/animal.js" charset="utf-8"></script>
+</body>
+</html>
